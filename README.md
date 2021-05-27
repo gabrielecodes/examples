@@ -1,3 +1,3 @@
 # examples
 code example
-tests
+test
