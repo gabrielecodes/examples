@@ -148,22 +148,7 @@ if __name__ == "__main__":
         print(f"Epoch {epoch + 1} Time = {time.time() - start:.3} secs.")     
         print(f"Loss = {l}")
         print(f"Training set accuracy {100 * train_acc:3.2f}")  
-        print("")
-    
-    train_accuracies = []
-    for epoch in range(epochs):
-        start = time.time()
-        for x, y in get_train_batches(batch_size, data_dir):        
-            x = jnp.array(x).reshape(len(x), 1, 28, 28)
-            y = to_categorical(jnp.array(y))            
-            net_params, l = jit(update)(net_params, x, y)            
-        
-        train_acc = accuracy(net_params, x, y)    
-        train_accuracies.append(train_acc)        
-        print(f"Epoch {epoch + 1} Time = {time.time() - start:.3} secs.")     
-        print(f"Loss = {l}")
-        print(f"Training set accuracy {100 * train_acc:3.2f}")  
-        print("")
-    
+        print("") 
+   
     print("end")
 
