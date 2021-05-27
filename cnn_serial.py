@@ -165,5 +165,5 @@ if __name__ == "__main__":
         print(f"Training set accuracy {100 * train_acc:3.2f}")  
         print("")
     
-    print("end"
-)
+    print("end")
+
