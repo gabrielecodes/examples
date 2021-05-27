@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import jax.numpy as jnp
 from jax import lax, vmap, jit, value_and_grad
 from jax.nn import relu, softmax, logsumexp
