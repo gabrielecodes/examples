@@ -1,2 +1,3 @@
 # examples
-code examples
+code example
+tests
